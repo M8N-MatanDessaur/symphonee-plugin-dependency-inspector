@@ -46,7 +46,7 @@ function httpsGet(urlStr, timeout) {
       hostname: url.hostname,
       path: url.pathname + url.search,
       method: 'GET',
-      headers: { 'Accept': 'application/json', 'User-Agent': 'devops-pilot-dependency-inspector/1.0' },
+      headers: { 'Accept': 'application/json', 'User-Agent': 'symphonee-dependency-inspector/1.0' },
       timeout: timeout || 10000
     };
     var req = https.request(opts, function(resp) {
@@ -274,7 +274,7 @@ async function checkVulnerabilities(packages) {
         headers: {
           'Content-Type': 'application/json',
           'Content-Length': Buffer.byteLength(postData),
-          'User-Agent': 'devops-pilot-dependency-inspector/1.0'
+          'User-Agent': 'symphonee-dependency-inspector/1.0'
         },
         timeout: 15000
       };

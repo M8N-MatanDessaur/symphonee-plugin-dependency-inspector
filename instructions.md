@@ -1,6 +1,6 @@
 ## Dependency Inspector Plugin -- AI Instructions
 
-You have access to a Dependency Inspector plugin via the DevOps Pilot API. This scans all configured repos for npm/NuGet dependency health -- vulnerabilities, outdated packages, license issues, and health scores.
+You have access to a Dependency Inspector plugin via the Symphonee API. This scans all configured repos for npm/NuGet dependency health -- vulnerabilities, outdated packages, license issues, and health scores.
 
 **All routes are at** `http://127.0.0.1:3800/api/plugins/dependency-inspector/`
 
